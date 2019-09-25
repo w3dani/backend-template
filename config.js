@@ -1,0 +1,10 @@
+module.exports = ({
+	server: {
+		port: 3000,
+	},
+	mongodb: {
+		host: 'localhost',
+		port: 27017,
+		database: 'test',
+	},
+});
