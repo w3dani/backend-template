@@ -1,10 +1,10 @@
 module.exports = ({
 	server: {
-		port: 3000,
+		port: process.env.PORT || 3000,
 	},
 	mongodb: {
-		host: 'localhost',
-		port: 27017,
-		database: 'test',
+		host: process.env.MONGODB_HOST || 'localhost',
+		port: process.env.MONGODB_PORT || 27017,
+		database: process.env.MONGODB_DATABASE || 'test',
 	},
 });
